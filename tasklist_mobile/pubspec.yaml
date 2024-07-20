@@ -10,6 +10,8 @@ dependencies:
   dio: ^5.5.0+1
   flutter:
     sdk: flutter
+  tasklist_commons:
+    path: ../tasklist_commons
 
 dev_dependencies:
   flutter_test:
