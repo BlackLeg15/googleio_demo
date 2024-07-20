@@ -1,5 +1,6 @@
 import 'package:dart_frog/dart_frog.dart';
 
 Response onRequest(RequestContext context) {
-  return Response(body: context.read<String>());
+  final city = context.read<String>();
+  return Response(body: 'Google I/O Extended em: $city');
 }
