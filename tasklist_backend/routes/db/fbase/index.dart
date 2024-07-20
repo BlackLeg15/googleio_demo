@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:dart_frog/dart_frog.dart';
@@ -20,7 +21,7 @@ Future<Response> _getTasks(RequestContext context) async {
     }
   });
 
-  return Response.json(body: lists.toString());
+  return Response.json(body: jsonEncode(lists));
 }
 
 Future<Response> _createTask(RequestContext context) async {
